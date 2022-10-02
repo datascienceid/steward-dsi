@@ -8,7 +8,11 @@ Discord Bot of Data Science Indonesia
 
 ## Bot Functions
 
-[WIP]
+| Syntax      | Description |
+| ----------- | ----------- |
+| $welcome    | Welcoming you in DSI discord  |
+| $halo       | Generating random reply from Bot |
+| $promote    | Promoting an account to have `member` role |        |
 
 ## Contribution
 
@@ -17,3 +21,6 @@ Discord Bot of Data Science Indonesia
 ## Reference
 
 * Join [Our Discord](bit.ly/discord-dsi-on)
+* [Discord with Python](https://www.freecodecamp.org/news/create-a-discord-bot-with-python/)
+* Discord [Color API](https://discordpy.readthedocs.io/en/latest/api.html#discord.User.color)
+

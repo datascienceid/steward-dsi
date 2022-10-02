@@ -1,41 +1,20 @@
-import random
 
-def get_hello(message):
-    list_hello = [
-        'halo.. apa kabar '+str(message.author)+'?'
-        ,'hai.. hai..'
-        ,'how are you?'
-        ,'are you still calling me?'
-        ,'wait a minute'
-        ,'tunggu dulu'
-        ,'kamu manggil?'
-        ,'sebentar ya..'
-        ,'siapa disitu?'
-        ,str(message.author)+' masih manggil ajah'
-        ,'ada yg bisa dibantu?'
-        ,"yes yes.. what's up?"
-        ,"coba ditunggu sebentar ya"
-        ,str(message.author)+' lagi apa?'
-        ,'baru kenal ya?'
-        ,'silahkan bisa dimulai.'
-        ,'lagi nonton nih.'
-        ,'butuh temen ya?'
-        ,'aku masih random lho..'
-        ,'jangan mulai deh..'
-        ,'masih baru ya?'
-        ,'hey, '+str(message.author)+' lagi sendiri ya?'
-        ,'halo,'+str(message.author)+' udah makan?'
-        ,'...'
-        ,'bisa ditunggu kan ya? wait ..'
-        ,'sesuai pesanan ya..'
-        ,'pasti ada jalan'
-        ,'helloo'
-        ,'Hai, sudah $promote belom?'
-        ,'Kalo mention, jangan lupa $promote'
-        ,'hey, '+str(message.author)+' sudah kenalan dengan yg lain kah?'
-        ,'halo.. sudah tau DSI belom?'
-        ,'hai hai,. sudah belajar Data hari ini?'
-        ,'hey, '+str(message.author)+' sudah Melek Data?'
-    ]
+def get_welcome():
+    reply = '''Selamat Datang di Server Data Science Indonesia. 
+        
+        Apakah kamu hanya bisa lihat 1 atau 2 channel? artinya kamu belom di promote.
+        Coba deh : $promote. Steward akan bantu setup.
+        Untuk Info lebih lanjut, kunjungi laman ini : bit.ly/dsidiscord1.
+        
+        Jika kamu sudah bisa melihat semua channel, Silahkan mulai diskusi, berbagi dan kontribusi.
+        Terima kasih.
 
-    return random.choice(list_hello)
+        Warm Regards,
+        Steward
+        '''
+    return reply
+
+def get_invalid_message():
+    reply = '''Diriku masih perlu belajar bisa. 
+        Try this : $welcome, $halo, $promote'''
+    return reply

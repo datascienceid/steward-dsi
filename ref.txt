@@ -1,8 +1,0 @@
-https://www.freecodecamp.org/news/create-a-discord-bot-with-python/
-https://discordpy.readthedocs.io/en/latest/api.html#discord.User.color
-
-screen -ls
-screen -r
-
-ctrl+a ctrl+t
-ctrl+a d

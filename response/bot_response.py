@@ -3,16 +3,14 @@ status :
 1 --> there is no outside function
 2 --> there is outside function (add roles)
 '''
+# $bijak
 
-from response.func.basic import get_hello
+from response.func.basic import get_hello, get_invalid_message, get_welcome
 
 def get_response(message):
             # message.mentions[0].id
     if message.content.startswith('$welcome'):
-        response = '''Selamat Datang di Server Data Science Indonesia. 
-        Apakah kamu cuma bisa lihat 1 atau 2 channel? berarti kamu belom di promote.
-        Coba deh : $promote. Steward akan bantu setup.
-        Untuk Info lebih lanjut, kunjungi laman ini : bit.ly/dsidiscord1'''
+        response = get_welcome()
         status = 1
     
     elif message.content.startswith('$halo'):
@@ -22,14 +20,9 @@ def get_response(message):
     elif message.content.startswith('$promote'):
         response = ''
         status = 2
-    
-    # elif message.content.startswith('$bijak'):
-    #     response = ...
-    #     status = 1
 
     else:
-        response = '''Diriku masih perlu belajar bisa. 
-        Try this : $welcome, $halo, $promote'''
+        response = get_invalid_message()
         status = 1
 
     return response,status

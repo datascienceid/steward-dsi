@@ -7,12 +7,12 @@ status :
 
 from response.func.basic import get_hello, get_invalid_message, get_welcome
 
+
 def get_response(message):
-            # message.mentions[0].id
     if message.content.startswith('$welcome'):
         response = get_welcome()
         status = 1
-    
+
     elif message.content.startswith('$halo'):
         response = get_hello(message)
         status = 1
@@ -25,5 +25,4 @@ def get_response(message):
         response = get_invalid_message()
         status = 1
 
-    return response,status
-    
+    return response, status

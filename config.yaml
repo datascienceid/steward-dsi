@@ -1,0 +1,2 @@
+PATH_AUTH : '../auth_config.yaml'
+PATH_QUERY : 'queries/'

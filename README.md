@@ -12,7 +12,7 @@ Discord Bot of Data Science Indonesia
 | ----------- | ----------- |
 | $welcome    | Welcoming you in DSI discord  |
 | $halo       | Generating random reply from Bot |
-| $promote    | Promoting an account to have `member` role |        |
+| $promote    | Promoting an account having a `member` role |        |
 
 ## Contribution
 

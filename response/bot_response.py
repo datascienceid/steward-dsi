@@ -5,7 +5,8 @@ status :
 '''
 # $bijak
 
-from response.func.basic import get_hello, get_invalid_message, get_welcome
+from response.func.basic import get_invalid_message, get_welcome
+from response.func.intermediate import get_hello
 
 
 def get_response(message):

@@ -1,0 +1,5 @@
+In server. The bot runs in the background using `screen`, several `screen` syntax:
+* screen -ls
+* screen -r
+* ctrl+a ctrl+t
+* ctrl+a d

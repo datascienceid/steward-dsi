@@ -3,10 +3,9 @@ status :
 1 --> there is no outside function
 2 --> there is outside function (add roles)
 '''
-# $bijak
 
 from response.func.basic import get_invalid_message, get_welcome
-from response.func.intermediate import get_hello
+from response.func.intermediate import get_hello, get_randq
 
 
 def get_response(message):
@@ -16,6 +15,10 @@ def get_response(message):
 
     elif message.content.startswith('$halo'):
         response = get_hello(message)
+        status = 1
+
+    elif message.content.startswith('$bijak'):
+        response = get_randq()
         status = 1
 
     elif message.content.startswith('$promote'):

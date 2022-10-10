@@ -1,4 +1,5 @@
 import random
+import requests
 
 
 def get_hello(message):
@@ -40,3 +41,12 @@ def get_hello(message):
     ]
 
     return random.choice(list_hello)
+
+
+def get_randq():
+    url_q = 'https://api.quotable.io/random'
+    resp = requests.get(url=url_q)
+    data = resp.json()
+    txt = '"{}" - {}'.format(data['content'], data['author'])
+    print(txt)
+    return txt

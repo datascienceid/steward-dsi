@@ -19,7 +19,8 @@ def get_welcome():
 
 def get_invalid_message():
     reply = '''Diriku masih perlu belajar bisa.
-    Try this : $welcome, $halo, $promote'''
+    Try this : $welcome, $halo, $promote, $bijak.
+    Get the explanation here : https://github.com/datascienceid/steward-dsi#bot-functions'''
     return reply
 
 

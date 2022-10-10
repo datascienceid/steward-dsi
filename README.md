@@ -31,6 +31,7 @@ python main.py
 | ----------- | ----------- |
 | $welcome    | Welcoming you in DSI discord  |
 | $halo       | Generating random reply from Bot |
+| $bijak      | Generating random quotes use [quotable.io](https://quotable.io/) API |
 | $promote    | Promoting an account having a `member` role |
 
 PS: $promote is special function which connect to DSI database. You can ignore this function while testing the bot in your local.

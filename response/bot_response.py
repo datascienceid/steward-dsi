@@ -17,7 +17,7 @@ def get_response(message):
         response = get_hello(message)
         status = 1
 
-    elif message.content.startswith('$bijak'):
+    elif message.content == '$bijak':
         response = get_randq()
         status = 1
 
